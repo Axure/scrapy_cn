@@ -1,43 +1,49 @@
-Scrapy  tutorial project
-====================================
+#Scrapy  tutorial project
 
-Glance
-----------
+### Glance
+
  * finished
-   1. 使用docker创建runtime容器
-   2. demo
+  
+  1. 使用docker创建runtime容器
+  
+  2. demo
 
  * 现有爬虫
-   onepage
-   multipage
+  
+  onepage
+  
+  multipage
 
  * tudos
-   脚本bootstrap
-   多个爬虫任务的runtime
-   js处理
-   celery的爬虫调度控制
+  
+  脚本bootstrap
+  
+  多个爬虫任务的runtime
+  
+  js处理
+  
+  celery的爬虫调度控制
 
-Install::
+Install:
 
     git clone https://github.com/addwork/scrapy_cn.git、
     pip install -r requirements.txt
 
-Usage::
+Usage:
 
     $cd demo/scrapy_cn
     $scrapy list
     $scrapy crawl onepage
 
-Build with docker::
+Build with docker:
 
     $sudo docker build -t addbook/scrapy-docker .
     $sudo docker -t -i addbook/scrapy-doccker
     $root@xxxxxx:scrapy
 
-.. Image:: https://github.com/addwork/scrapy_cn/blob/master/doc/images/scrapy_docker.jpg?raw=true
+![]https://github.com/addwork/scrapy_cn/blob/master/doc/images/scrapy_docker.jpg?raw=true
 
-项目介绍
---------------------------
+## 项目介绍
 
 项目结构::
 
@@ -50,14 +56,13 @@ Build with docker::
         -schedule/  ...可调度爬虫的简单实现
         -distrib/   ...分布式负载
 
-Contact:
-----------
+## Contact:
 
- * QQ群:282889215  
- * blog:<scu.qfboys.com>  
+- QQ群:282889215  
 
-Features
------------------
+- blog:<scu.qfboys.com>  
+
+## Features
 
 - [ ] 开放Linkbase抓取的爬虫
 - [ ] 开放可管理调度任务的爬虫
@@ -74,9 +79,6 @@ Features
 - [ ] 增加站点raw数据压缩，以及HDFS相关处理
 - [ ] 爬虫任务调度
 
-Lisence
-===========
-
-   BSD Lisence
+## Lisence: BSD Lisence
 
 
