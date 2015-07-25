@@ -4,7 +4,7 @@
 
 Install:
 
-    git clone https://github.com/addwork/scrapy_cn.git、
+    git clone https://github.com/qfboys/qfbot.git
     pip install -r requirements.txt
 
 Usage:
@@ -15,8 +15,8 @@ Usage:
 
 Build with docker:
 
-    $sudo docker build -t addbook/scrapy-docker .
-    $sudo docker -t -i addbook/scrapy-doccker
+    $sudo docker build -t addbook/qfbot .
+    $sudo docker -rm -t -i addbook/qfbot
     $root@xxxxxx:scrapy
 
 ![](https://github.com/addwork/scrapy_cn/blob/master/doc/images/scrapy_docker.jpg?raw=true)

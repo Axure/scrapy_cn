@@ -13,6 +13,7 @@ from flask_social_blueprint.core import SocialBlueprint
 from . import settings as _config
 from .ext import (api, babel, cache, db, login_manager,
                   mail, mako, redis_store, security)
+from .models.user import User
 
 
 def create_app(config):
@@ -57,10 +58,10 @@ def register_auth(app):
     security.init_app(app, MongoEngineUserDatastore(db, User, Role))
     state = app.extensions['security']
     state.render_template = render_template
-    state.send_mail_task(send_mail)
+    #state.send_mail_task(send_mail)
     app.extensions['security'] = state
 
-    SocialBlueprint.init_bp(app, SocialConnection, url_prefix='/_social')
+    #SocialBlueprint.init_bp(app, SocialConnection, url_prefix='/_social')
 
 
 def configure_error_handles(app):
@@ -75,8 +76,8 @@ def configure_error_handles(app):
 
 
 def register_blueprints(app):
-    from firefly.views import (home, post, category, api, keyboard, user)
-    for i in (home, post, category, api, keyboard, user):
+    from .views import (api)
+    for i in (api):
         app.register_blueprint(i.bp)
 
 
@@ -93,7 +94,7 @@ def register_hooks(app):
 
 
 def plug_to_db(db):
-    from firefly.models.utils import dict_filter
+    from .models.utils import dict_filter
 
     def to_dict(self, *args, **kwargs):
         return dict_filter(self.to_mongo(), *args, **kwargs)

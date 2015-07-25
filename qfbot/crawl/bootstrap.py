@@ -3,12 +3,12 @@
 # vim: set et sw=4 ts=4 sts=4 fenc=utf-8
 # Author: YuanLin
 
-from scrapy.utils.project import get_project-settings
+from scrapy.utils.project import get_project_settings
 from twisted.internet import reactor
 from scrapy.crawler import Crawler
 #from model import Spider
 from scrapy import log, signals
-from .spdiers import crawlspider
+from .spiders import crawlspider
 
 import datetime
 import json
@@ -27,14 +27,13 @@ class CrawlStack(Process):
 
     def __init__(self, name):
         super(CrawlStack, self).__init__(self)
-        self.name = project
+        self.name = name
 
     def _setup(self, project):
         spider = crawlspider.LinkSpider(project)
         settings = get_project_settings()
         crawler = Crawler(settings)
         crawler.configure()
-        #crawler.signals.connect()
         crawler.crawl(spider)
         self.add_crawler()
 

@@ -6,3 +6,4 @@ mongoengine
 schematics
 werkzeug
 flask
+scrapy==0.24
