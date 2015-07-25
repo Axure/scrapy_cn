@@ -1,6 +1,5 @@
 Scrapy  tutorial project
 ====================================
-seed：<http://book.douban.com/tag/Programming>
 
 Glance
 ----------
@@ -55,16 +54,35 @@ Contact:
 ----------
 
  * QQ群:282889215  
- * blog:<www.addbook.cn/scrapy>  
+ * blog:<scu.qfboys.com>  
 
-TODOS:
+Features
 -----------------
 
- * 开放部分scrapy用到的组件
- * 设计一个大规模爬虫的范例，以示大规模爬虫设计的要点，以及解决常见问题手段
- * 开放Linkbase抓取的爬虫
- * 开放可管理调度任务的爬虫
- * 大规模任务负载的分布式处理实现
+ -[] 开放Linkbase抓取的爬虫
+
+ -[] 开放可管理调度任务的爬虫
+
+ -[] 大规模任务负载的分布式处理实现
+
+ -[] 支持mq
+
+ -[] 将下载与完成与解析任务分离,下载结果直接压入MQ中.
+
+ -[] 增加解析worker脚本
+
+ -[] 增加任务查看的统一的API
+
+
+ -[] 增加web-api
+
+ -[] 以及管理API
+
+ -[] 增加SRP过程
+
+ -[] 增加站点raw数据压缩，以及HDFS相关处理
+
+ -[] 爬虫任务调度
 
 Lisence
 ===========
