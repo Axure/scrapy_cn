@@ -1,4 +1,8 @@
 celery
 billiard
 redis
-mongokit
+pymongo
+mongoengine
+schematics
+werkzeug
+flask

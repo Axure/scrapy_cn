@@ -2,28 +2,6 @@
 
 ### Glance
 
- * finished
-  
-  1. 使用docker创建runtime容器
-  
-  2. demo
-
- * 现有爬虫
-  
-  onepage
-  
-  multipage
-
- * tudos
-  
-  脚本bootstrap
-  
-  多个爬虫任务的runtime
-  
-  js处理
-  
-  celery的爬虫调度控制
-
 Install:
 
     git clone https://github.com/addwork/scrapy_cn.git、
@@ -41,11 +19,9 @@ Build with docker:
     $sudo docker -t -i addbook/scrapy-doccker
     $root@xxxxxx:scrapy
 
-![]https://github.com/addwork/scrapy_cn/blob/master/doc/images/scrapy_docker.jpg?raw=true
+![](https://github.com/addwork/scrapy_cn/blob/master/doc/images/scrapy_docker.jpg?raw=true)
 
-## 项目介绍
-
-项目结构::
+## structure
 
     scrapy_cn/
         -doc/       ...关于工具插件的使用指南
@@ -60,7 +36,7 @@ Build with docker:
 
 - QQ群:282889215  
 
-- blog:<scu.qfboys.com>  
+- blog: [scu.qfboys.com](scu.qfboys.com) 
 
 ## Features
 

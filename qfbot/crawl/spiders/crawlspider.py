@@ -4,15 +4,15 @@
 # Author: YuanLin
 
 """Crawl Parsing script.
-   --------------------
    Parse data form html format.
 """
 
 from scrapy.spider import Spider
 from scrapy.http import Request
 from scrapy.selector import Selector
-from crawl.items import CrawlItem
 from scrapy import log
+
+from ..items import CrawlItem
 
 class ListSpider(Spider):
     """To build linkbase"""
