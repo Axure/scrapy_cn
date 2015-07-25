@@ -24,9 +24,12 @@ REDIS_URI = 'redis://localhost:6379/1'
 
 
 
-SECRET_KEY = uuid.uuid4().get_hex()
+COOKIE_STR = uuid.uuid4().get_hex()
 
 DEBUG = False
+
+STATIC = os.path.join(os.path.abspath(__file__), 'static')
+TEMPLATE = os.path.join(os.path.abspath(__file__), 'templates')
 
 MAX_CONTENT_LENGTH = 16 * 1024 * 1024
 

@@ -3,7 +3,9 @@ billiard
 redis
 pymongo
 mongoengine
-schematics
-werkzeug
-flask
+motor
+tornado
+tornado-celery
+requests
 scrapy==0.24
+

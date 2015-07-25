@@ -2,7 +2,7 @@
 # coding=utf-8
 # vim: set et sw=4 ts=4 sts=4
 # Author: YuanLin
-# Created: 2015-07-25 11:32 CST
+# Created: 2015-07-25 13:31 CST
 
 
-api_routes = []
+base_routes = []
