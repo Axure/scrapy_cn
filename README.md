@@ -1,6 +1,8 @@
 #Scrapy  tutorial project
 
-# !!! PLEASE SEE https://github.com/qfbot/qfbot
+# !!! PLEASE SEE 
+
+    https://github.com/qfbot/qfbot
 
 ### Glance
 
