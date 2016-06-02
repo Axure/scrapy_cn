@@ -2,7 +2,7 @@
 
 # !!! PLEASE SEE 
 
-    https://github.com/qfbot/qfbot
+[https://github.com/qfbot/qfbot](https://github.com/qfbot/qfbot)
 
 ### Glance
 
